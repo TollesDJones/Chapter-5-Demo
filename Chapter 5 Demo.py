@@ -39,13 +39,13 @@ len(list_name) # Returns 4 if using the example above
 #
 # # Example 3
 # # Remove Items from a list
-del list_name[index]
+del list_name[1] #index
 # Deleting does not create gaps in the list indices
 # All items are are re-indexed
 #
 # # Example 4
 # # You can delete a slice from a list
-del list_name[index_start:index_stop] # Remember the stop is exclusive
+#del list_name[index_start:index_stop] # Remember the stop is exclusive
 
 
 """
@@ -57,7 +57,7 @@ for example the:
 .remove() 
 .sort() or .sort(reverse=True) for ascending and descending 
 .reverse() first item becomes the last
-
+.pop() removes and returns the last item 
 """
 
 # Example 1
@@ -67,7 +67,7 @@ for example the:
 scores = []
 
 choice = None
-while choice != "0":
+while not choice:
 
     print(
         """
@@ -116,6 +116,11 @@ while choice != "0":
         print("Sorry, but", choice, "isn't a valid choice.")
 
 input("\n\nPress the enter key to exit.")
+
+
+
+#-------------- Break ------------------#
+
 
 
 """
